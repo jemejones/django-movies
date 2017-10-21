@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Actor List{% endblock %}
+
+{% block content %}
+<h1>Actor List</h1>
+
+<ul>
+{% for actor in actors %}
+  <li>
+    <a href="{% url 'actor-detail' actor.id %}">{{ actor}}</a>
+  </li>
+{% endfor %}
+</ul>
+{% if user.is_authenticated %}
+<div>
+  <a href="/actors/create/">New Actor</a>
+</div>
+{% endif %}
+{% endblock %}
