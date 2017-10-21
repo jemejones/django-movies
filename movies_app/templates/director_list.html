@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Director List{% endblock %}
+
+{% block content %}
+<h1>Director List</h1>
+
+<ul>
+{% for director in directors %}
+  <li>
+    <a href="{% url 'director-detail' director.id %}">{{ director }}</a>
+  </li>
+{% endfor %}
+</ul>
+{% if user.is_authenticated %}
+<div>
+  <a href="/directors/create/">New Director</a>
+</div>
+{% endif %}
+{% endblock %}

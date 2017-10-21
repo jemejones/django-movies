@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Movie List{% endblock %}
+
+{% block content %}
+<h1>Movie List</h1>
+
+<ul>
+  {% for movie in movies %}
+  <li>
+    <a href="{% url 'movie-detail' movie.id %}">{{ movie}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if user.is_authenticated %}
+<div>
+  <a href="/movies/create/">New Movie</a>
+</div>
+{% endif %}
+
+{% endblock %}

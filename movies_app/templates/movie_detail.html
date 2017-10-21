@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Movie Detail{% endblock %}
+
+{% block content %}
+<h1>{{ movie }}</h1>
+
+<div>
+  Director: <a href="{% url 'director-detail' movie.director.id %}">{{ movie.director }}</a>
+</div>
+
+<div>
+  Actors
+  <ul>
+    {% for actor in movie.actors.all %}
+    <li>
+      <a href="{% url 'actor-detail' actor.id %}">{{ actor }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% if user.is_authenticated %}
+<div>
+  <a href="edit/">Edit</a>
+</div>
+{% endif %}
+
+{% endblock %}

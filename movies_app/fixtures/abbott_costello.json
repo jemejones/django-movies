@@ -1,0 +1,185 @@
+[
+{
+  "model": "movies_app.actor",
+  "pk": 1,
+  "fields": {
+    "first_name": "Bud",
+    "last_name": "Abbott",
+    "slug": "bud-abbott",
+    "birthday": "1895-10-02"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 2,
+  "fields": {
+    "first_name": "Lou",
+    "last_name": "Costello",
+    "slug": "lou-costello",
+    "birthday": "1906-03-06"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 3,
+  "fields": {
+    "first_name": "Lon",
+    "last_name": "Chaney",
+    "slug": "lon-chaney",
+    "birthday": "1906-02-10"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 4,
+  "fields": {
+    "first_name": "Bela",
+    "last_name": "Lugosi",
+    "slug": "bela-lugosi",
+    "birthday": "1882-10-20"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 5,
+  "fields": {
+    "first_name": "Lenore",
+    "last_name": "Aubert",
+    "slug": "lenore-aubert",
+    "birthday": "1918-04-18"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 6,
+  "fields": {
+    "first_name": "Jane",
+    "last_name": "Randolph",
+    "slug": "jane-randolph",
+    "birthday": "1915-10-30"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 7,
+  "fields": {
+    "first_name": "Marilyn",
+    "last_name": "Maxwell",
+    "slug": "marilyn-maxwell",
+    "birthday": "1920-08-03"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 8,
+  "fields": {
+    "first_name": "Frances",
+    "last_name": "Rafferty",
+    "slug": "frances-rafferty",
+    "birthday": "1922-06-16"
+  }
+},
+{
+  "model": "movies_app.actor",
+  "pk": 9,
+  "fields": {
+    "first_name": "Clyde",
+    "last_name": "Beatty",
+    "slug": "clyde-beatty",
+    "birthday": "1903-06-10"
+  }
+},
+{
+  "model": "movies_app.director",
+  "pk": 1,
+  "fields": {
+    "first_name": "Sylvan",
+    "last_name": "Simon",
+    "slug": "sylvan-simon",
+    "birthday": "1910-03-09"
+  }
+},
+{
+  "model": "movies_app.director",
+  "pk": 2,
+  "fields": {
+    "first_name": "Charles",
+    "last_name": "Reisner",
+    "slug": "charles-reisner",
+    "birthday": "1887-03-14"
+  }
+},
+{
+  "model": "movies_app.director",
+  "pk": 3,
+  "fields": {
+    "first_name": "Charles",
+    "last_name": "Barton",
+    "slug": "charles-barton",
+    "birthday": "1902-05-25"
+  }
+},
+{
+  "model": "movies_app.movie",
+  "pk": 1,
+  "fields": {
+    "name": "Bud Abbott and Lou Costello in Hollywood",
+    "year": 1945,
+    "rating": "G",
+    "director": 1,
+    "actors": [
+      1,
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "movies_app.movie",
+  "pk": 2,
+  "fields": {
+    "name": "Lost in a Harem",
+    "year": 1944,
+    "rating": "G",
+    "director": 2,
+    "actors": [
+      1,
+      2,
+      7
+    ]
+  }
+},
+{
+  "model": "movies_app.movie",
+  "pk": 3,
+  "fields": {
+    "name": "Abbott and Costello Meet Frankenstein",
+    "year": 1948,
+    "rating": "G",
+    "director": 3,
+    "actors": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "movies_app.movie",
+  "pk": 4,
+  "fields": {
+    "name": "Africa Screams",
+    "year": 1949,
+    "rating": "G",
+    "director": 3,
+    "actors": [
+      1,
+      2,
+      9
+    ]
+  }
+}
+]
